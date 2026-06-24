@@ -128,10 +128,13 @@ function initDB() {
     );
   `);
 
-  // ── Migrations: add notes to phases if missing ──────────────────────────────
+  // ── Migrations: add columns to phases if missing ────────────────────────────
   const phaseCols = db.prepare('PRAGMA table_info(phases)').all().map(c => c.name);
   if (!phaseCols.includes('notes')) {
     db.exec("ALTER TABLE phases ADD COLUMN notes TEXT DEFAULT ''");
+  }
+  if (!phaseCols.includes('critical')) {
+    db.exec('ALTER TABLE phases ADD COLUMN critical INTEGER DEFAULT 0');
   }
 
   // ── Migrations: add columns to orders if schema was created before Phase 2 ─
@@ -171,10 +174,12 @@ function initDB() {
     for (const z of baseZones) ins.run(z.code, z.label);
   }
 
-  // ── Add exterior zones if missing ────────────────────────────────────────
+  // ── Add extra zones if missing ────────────────────────────────────────────
   for (const z of [
-    { code: 'EXTERIOR-FRONT', label: 'Exterior Front' },
-    { code: 'EXTERIOR-BACK',  label: 'Exterior Back'  },
+    { code: 'EXTERIOR-FRONT', label: 'Πιλοτή' },
+    { code: 'EXTERIOR-BACK',  label: 'Ακάλυπτος' },
+    { code: 'FACADE',         label: 'Όψη Ναούσης/Ιωαννίνων' },
+    { code: 'BALCONIES',      label: 'Εξώστες' },
   ]) {
     if (!db.prepare('SELECT id FROM zones WHERE code = ?').get(z.code)) {
       db.prepare('INSERT INTO zones (code, label) VALUES (?, ?)').run(z.code, z.label);

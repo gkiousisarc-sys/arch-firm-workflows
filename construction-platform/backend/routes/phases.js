@@ -32,11 +32,11 @@ router.get('/phases', (req, res) => {
 // Create a phase
 router.post('/phases', (req, res) => {
   const { subcontractor_id, name, zone = '', planned_start = '', planned_end = '',
-          status = 'not_started', progress = 0, sort_order = 0 } = req.body;
+          status = 'not_started', progress = 0, sort_order = 0, notes = '', critical = 0 } = req.body;
   const result = db.prepare(`
-    INSERT INTO phases (subcontractor_id, name, zone, planned_start, planned_end, status, progress, sort_order)
-    VALUES (?, ?, ?, ?, ?, ?, ?, ?)
-  `).run(Number(subcontractor_id), name, zone, planned_start, planned_end, status, Number(progress), Number(sort_order));
+    INSERT INTO phases (subcontractor_id, name, zone, planned_start, planned_end, status, progress, sort_order, notes, critical)
+    VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+  `).run(Number(subcontractor_id), name, zone, planned_start, planned_end, status, Number(progress), Number(sort_order), notes, critical ? 1 : 0);
   res.json({ id: Number(result.lastInsertRowid) });
 });
 
@@ -79,11 +79,11 @@ router.post('/phases/generate/:subcontractor_id', (req, res) => {
 // Update a phase
 router.put('/phases/:id', (req, res) => {
   const { name, zone = '', planned_start = '', planned_end = '',
-          status = 'not_started', progress = 0, sort_order = 0, notes = '' } = req.body;
+          status = 'not_started', progress = 0, sort_order = 0, notes = '', critical = 0 } = req.body;
   db.prepare(`
-    UPDATE phases SET name=?, zone=?, planned_start=?, planned_end=?, status=?, progress=?, sort_order=?, notes=?
+    UPDATE phases SET name=?, zone=?, planned_start=?, planned_end=?, status=?, progress=?, sort_order=?, notes=?, critical=?
     WHERE id=?
-  `).run(name, zone, planned_start, planned_end, status, Number(progress), Number(sort_order), notes, Number(req.params.id));
+  `).run(name, zone, planned_start, planned_end, status, Number(progress), Number(sort_order), notes, critical ? 1 : 0, Number(req.params.id));
   res.json({ ok: true });
 });
 
@@ -136,7 +136,7 @@ router.put('/phases/:id/tasks/:type', (req, res) => {
 router.get('/phase-zones', (req, res) => {
   const rows = db.prepare(`
     SELECT pz.id, pz.phase_id, pz.zone, pz.status,
-           p.name AS phase_name, p.planned_start, p.planned_end, p.progress, p.notes,
+           p.name AS phase_name, p.planned_start, p.planned_end, p.progress, p.notes, p.critical,
            p.subcontractor_id, sc.name AS sub_name, sc.trade
     FROM phase_zones pz
     JOIN phases p ON pz.phase_id = p.id

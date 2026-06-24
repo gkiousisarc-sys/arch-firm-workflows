@@ -1,5 +1,6 @@
 const express = require('express');
 const cors    = require('cors');
+const path    = require('path');
 const { initDB } = require('./db');
 
 const projectRoutes       = require('./routes/project');
@@ -10,7 +11,7 @@ const suppliersRoutes     = require('./routes/suppliers');
 const ordersRoutes        = require('./routes/orders');
 
 const app  = express();
-const PORT = 5000;
+const PORT = process.env.PORT || 5000;
 
 app.use(cors());
 app.use(express.json());
@@ -21,6 +22,12 @@ app.use('/api', holidayRoutes);
 app.use('/api', phasesRoutes);
 app.use('/api', suppliersRoutes);
 app.use('/api', ordersRoutes);
+
+// Serve built React frontend in production
+app.use(express.static(path.join(__dirname, '../frontend/dist')));
+app.get('*', (_req, res) => {
+  res.sendFile(path.join(__dirname, '../frontend/dist/index.html'));
+});
 
 initDB();
 

@@ -204,7 +204,15 @@ export default function PhaseDetailPanel({ phase, sub, onClose, onEdit, onChange
           <div className="px-5 py-4 border-b border-slate-800">
             <div className="flex items-center justify-between mb-2">
               <h3 className="text-xs font-semibold text-slate-400 uppercase tracking-wider">Notes</h3>
-              {saving && <span className="text-xs text-slate-600">Saving…</span>}
+              <div className="flex items-center gap-2">
+                {saving && <span className="text-xs text-slate-600">Saving…</span>}
+                {notes !== notesRef.current && !saving && (
+                  <button
+                    onClick={saveNotes}
+                    className="text-xs bg-amber-500 hover:bg-amber-400 text-slate-900 font-semibold px-2.5 py-1 rounded transition-colors"
+                  >Save notes</button>
+                )}
+              </div>
             </div>
             <textarea
               rows={4}

@@ -1,0 +1,1063 @@
+{
+  "zones": {
+    "B0": "Υπόγειο",
+    "L1": "Ισόγειο",
+    "L2": "Α' Όροφος",
+    "L3": "Β' Όροφος",
+    "L4": "Σοφίτα",
+    "STAIR": "Κλιμακοστάσιο",
+    "LIFT": "Ασανσέρ",
+    "ROOF": "Στέγη/Ταράτσα",
+    "EXTERIOR-FRONT": "Πιλοτή",
+    "EXTERIOR-BACK": "Ακάλυπτος",
+    "FACADE": "Όψη Ναούσης/Ιωαννίνων",
+    "BALCONIES": "Εξώστες"
+  },
+  "phases": [
+    {
+      "group": "Η/Μ Α φάση",
+      "name": "Α φάση Η/Μ - Α όροφος",
+      "subcontractor": "Η/Μ",
+      "start": "2026-06-22",
+      "end": "2026-06-22",
+      "duration": 0,
+      "critical": true,
+      "zones": [
+        "L2"
+      ]
+    },
+    {
+      "group": "Η/Μ Α φάση",
+      "name": "Α φάση Η/Μ - Β όροφος",
+      "subcontractor": "Η/Μ",
+      "start": "2026-06-23",
+      "end": "2026-07-03",
+      "duration": 8,
+      "critical": true,
+      "zones": [
+        "L3"
+      ]
+    },
+    {
+      "group": "Η/Μ Α φάση",
+      "name": "Α φάση Η/Μ - Γ όροφος",
+      "subcontractor": "Η/Μ",
+      "start": "2026-07-06",
+      "end": "2026-07-16",
+      "duration": 8,
+      "critical": true,
+      "zones": [
+        "L4"
+      ]
+    },
+    {
+      "group": "Η/Μ Α φάση",
+      "name": "Α φάση Η/Μ - κοιν./υπόγ./ισόγ.",
+      "subcontractor": "Η/Μ",
+      "start": "2026-07-17",
+      "end": "2026-08-04",
+      "duration": 12,
+      "critical": false,
+      "zones": [
+        "B0",
+        "L1",
+        "STAIR"
+      ]
+    },
+    {
+      "group": "Αποχέτευση",
+      "name": "Εκσκαφή pilotis 1,20μ + σύνδεση",
+      "subcontractor": "Χωματ.+υδρ.",
+      "start": "2026-07-27",
+      "end": "2026-08-06",
+      "duration": 8,
+      "critical": false,
+      "zones": [
+        "EXTERIOR-FRONT"
+      ]
+    },
+    {
+      "group": "Γυψοσανίδες",
+      "name": "Γυψοσανίδα - Α",
+      "subcontractor": "Αντρέας",
+      "start": "2026-06-23",
+      "end": "2026-07-01",
+      "duration": 6,
+      "critical": false,
+      "zones": [
+        "L2"
+      ]
+    },
+    {
+      "group": "Γυψοσανίδες",
+      "name": "Γυψοσανίδα - Β",
+      "subcontractor": "Αντρέας",
+      "start": "2026-07-06",
+      "end": "2026-07-14",
+      "duration": 6,
+      "critical": false,
+      "zones": [
+        "L3"
+      ]
+    },
+    {
+      "group": "Γυψοσανίδες",
+      "name": "Γυψοσανίδα - Γ",
+      "subcontractor": "Αντρέας",
+      "start": "2026-07-17",
+      "end": "2026-07-27",
+      "duration": 6,
+      "critical": true,
+      "zones": [
+        "L4"
+      ]
+    },
+    {
+      "group": "Γυψοσανίδες",
+      "name": "Ηχομόνωση Β-Γ",
+      "subcontractor": "Αντρέας",
+      "start": "2026-07-28",
+      "end": "2026-08-07",
+      "duration": 8,
+      "critical": true,
+      "zones": [
+        "L3",
+        "L4"
+      ]
+    },
+    {
+      "group": "Γυψοσανίδες",
+      "name": "Γυψοσανίδα - Ισόγειο",
+      "subcontractor": "Αντρέας",
+      "start": "2026-08-24",
+      "end": "2026-09-01",
+      "duration": 6,
+      "critical": true,
+      "zones": [
+        "L1"
+      ]
+    },
+    {
+      "group": "Γυψοσανίδες",
+      "name": "Γυψοσανίδα - Υπόγειο",
+      "subcontractor": "Αντρέας",
+      "start": "2026-09-02",
+      "end": "2026-09-09",
+      "duration": 5,
+      "critical": true,
+      "zones": [
+        "B0"
+      ]
+    },
+    {
+      "group": "Σοβάς εσωτ.",
+      "name": "Εσωτ. σοβάς - Α",
+      "subcontractor": "Σοβατζής",
+      "start": "2026-07-02",
+      "end": "2026-07-09",
+      "duration": 5,
+      "critical": false,
+      "zones": [
+        "L2"
+      ]
+    },
+    {
+      "group": "Σοβάς εσωτ.",
+      "name": "Εσωτ. σοβάς - Β",
+      "subcontractor": "Σοβατζής",
+      "start": "2026-08-24",
+      "end": "2026-08-31",
+      "duration": 5,
+      "critical": false,
+      "zones": [
+        "L3"
+      ]
+    },
+    {
+      "group": "Σοβάς εσωτ.",
+      "name": "Εσωτ. σοβάς - Γ",
+      "subcontractor": "Σοβατζής",
+      "start": "2026-09-01",
+      "end": "2026-09-08",
+      "duration": 5,
+      "critical": false,
+      "zones": [
+        "L4"
+      ]
+    },
+    {
+      "group": "Σοβάς εσωτ.",
+      "name": "Εσωτ. σοβάς - ισ./υπ./κοιν.",
+      "subcontractor": "Σοβατζής",
+      "start": "2026-09-10",
+      "end": "2026-09-24",
+      "duration": 10,
+      "critical": true,
+      "zones": [
+        "STAIR"
+      ]
+    },
+    {
+      "group": "Μονώσεις",
+      "name": "Υγρομ.+θερμομ. κύριας ταράτσας",
+      "subcontractor": "Εξειδ. μονωτής",
+      "start": "2026-07-06",
+      "end": "2026-07-22",
+      "duration": 12,
+      "critical": false,
+      "zones": [
+        "ROOF"
+      ]
+    },
+    {
+      "group": "Μονώσεις",
+      "name": "Υγρομ. ταράτσας Γ (λεπτή)",
+      "subcontractor": "Εξειδ. μονωτής",
+      "start": "2026-07-23",
+      "end": "2026-07-30",
+      "duration": 5,
+      "critical": false,
+      "zones": [
+        "L4",
+        "ROOF"
+      ]
+    },
+    {
+      "group": "Μονώσεις",
+      "name": "Υγρομ. ακαλύπτου",
+      "subcontractor": "Εξειδ. μονωτής",
+      "start": "2026-07-31",
+      "end": "2026-08-28",
+      "duration": 10,
+      "critical": false,
+      "zones": [
+        "EXTERIOR-BACK"
+      ]
+    },
+    {
+      "group": "Μονώσεις",
+      "name": "Υγρομ./διαμόρφ. pilotis",
+      "subcontractor": "Εξειδ. μονωτής",
+      "start": "2026-08-31",
+      "end": "2026-09-08",
+      "duration": 6,
+      "critical": false,
+      "zones": [
+        "EXTERIOR-FRONT"
+      ]
+    },
+    {
+      "group": "Μονώσεις",
+      "name": "Υγρομ. ζαρντινιερών",
+      "subcontractor": "Εξειδ. μονωτής",
+      "start": "2026-09-09",
+      "end": "2026-09-17",
+      "duration": 6,
+      "critical": false,
+      "zones": [
+        "EXTERIOR-FRONT"
+      ]
+    },
+    {
+      "group": "Ηλεκτρ. Β φάση",
+      "name": "Β φάση ηλεκτρ. - Α",
+      "subcontractor": "Ηλεκτρολόγος",
+      "start": "2026-07-10",
+      "end": "2026-07-14",
+      "duration": 2,
+      "critical": false,
+      "zones": [
+        "L2"
+      ]
+    },
+    {
+      "group": "Ηλεκτρ. Β φάση",
+      "name": "Β φάση ηλεκτρ. - Β",
+      "subcontractor": "Ηλεκτρολόγος",
+      "start": "2026-09-01",
+      "end": "2026-09-03",
+      "duration": 2,
+      "critical": false,
+      "zones": [
+        "L3"
+      ]
+    },
+    {
+      "group": "Ηλεκτρ. Β φάση",
+      "name": "Β φάση ηλεκτρ. - Γ",
+      "subcontractor": "Ηλεκτρολόγος",
+      "start": "2026-09-09",
+      "end": "2026-09-11",
+      "duration": 2,
+      "critical": false,
+      "zones": [
+        "L4"
+      ]
+    },
+    {
+      "group": "Ηλεκτρ. Β φάση",
+      "name": "Β φάση ηλεκτρ. - λοιπά",
+      "subcontractor": "Ηλεκτρολόγος",
+      "start": "2026-09-25",
+      "end": "2026-09-30",
+      "duration": 3,
+      "critical": true,
+      "zones": [
+        "B0",
+        "L1",
+        "L2",
+        "L3",
+        "L4"
+      ]
+    },
+    {
+      "group": "Χρωμ. προετοιμ.",
+      "name": "Σπατουλ.+1ο χέρι - Α",
+      "subcontractor": "Μπογιατζής",
+      "start": "2026-07-15",
+      "end": "2026-07-22",
+      "duration": 5,
+      "critical": false,
+      "zones": [
+        "L2"
+      ]
+    },
+    {
+      "group": "Χρωμ. προετοιμ.",
+      "name": "Σπατουλ.+1ο χέρι - Β",
+      "subcontractor": "Μπογιατζής",
+      "start": "2026-09-04",
+      "end": "2026-09-11",
+      "duration": 5,
+      "critical": false,
+      "zones": [
+        "L3"
+      ]
+    },
+    {
+      "group": "Χρωμ. προετοιμ.",
+      "name": "Σπατουλ.+1ο χέρι - Γ",
+      "subcontractor": "Μπογιατζής",
+      "start": "2026-09-14",
+      "end": "2026-09-21",
+      "duration": 5,
+      "critical": false,
+      "zones": [
+        "L4"
+      ]
+    },
+    {
+      "group": "Χρωμ. προετοιμ.",
+      "name": "Σπατουλ.+1ο χέρι - Ισόγειο",
+      "subcontractor": "Μπογιατζής",
+      "start": "2026-10-01",
+      "end": "2026-10-07",
+      "duration": 4,
+      "critical": false,
+      "zones": [
+        "L1"
+      ]
+    },
+    {
+      "group": "Χρωμ. προετοιμ.",
+      "name": "Σπατουλ.+1ο χέρι - Υπόγ./κλιμ.",
+      "subcontractor": "Μπογιατζής",
+      "start": "2026-10-08",
+      "end": "2026-10-16",
+      "duration": 6,
+      "critical": false,
+      "zones": [
+        "B0",
+        "STAIR"
+      ]
+    },
+    {
+      "group": "Σιδηρικά",
+      "name": "Κιγκλιδώματα εξωστών Γ",
+      "subcontractor": "Πόλο",
+      "start": "2026-07-31",
+      "end": "2026-08-06",
+      "duration": 4,
+      "critical": false,
+      "zones": [
+        "BALCONIES"
+      ]
+    },
+    {
+      "group": "Σιδηρικά",
+      "name": "Κιγκλιδώματα εξωστών Α",
+      "subcontractor": "Πόλο",
+      "start": "2026-08-07",
+      "end": "2026-08-27",
+      "duration": 4,
+      "critical": false,
+      "zones": [
+        "BALCONIES"
+      ]
+    },
+    {
+      "group": "Σιδηρικά",
+      "name": "Κιγκλιδώματα εξωστών Β",
+      "subcontractor": "Πόλο",
+      "start": "2026-08-28",
+      "end": "2026-09-03",
+      "duration": 4,
+      "critical": false,
+      "zones": [
+        "BALCONIES"
+      ]
+    },
+    {
+      "group": "Σιδηρικά",
+      "name": "Βάση Deck + Deck",
+      "subcontractor": "Πόλο",
+      "start": "2026-09-09",
+      "end": "2026-09-23",
+      "duration": 10,
+      "critical": false,
+      "zones": [
+        "EXTERIOR-BACK"
+      ]
+    },
+    {
+      "group": "Σιδηρικά",
+      "name": "Κιγκλιδ. παταριού+σκάλες Ισ.",
+      "subcontractor": "Πόλο",
+      "start": "2026-12-18",
+      "end": "2026-12-24",
+      "duration": 4,
+      "critical": false,
+      "zones": [
+        "STAIR"
+      ]
+    },
+    {
+      "group": "Σιδηρικά",
+      "name": "Κιγκλιδώματα κλιμακοστασίου",
+      "subcontractor": "Πόλο",
+      "start": "2027-01-11",
+      "end": "2027-01-15",
+      "duration": 4,
+      "critical": false,
+      "zones": [
+        "STAIR"
+      ]
+    },
+    {
+      "group": "Κουφώματα",
+      "name": "Εξωτερικά κουφώματα",
+      "subcontractor": "Αλουμινάς",
+      "start": "2026-09-25",
+      "end": "2026-10-05",
+      "duration": 6,
+      "critical": false,
+      "zones": [
+        "B0",
+        "L1",
+        "L2",
+        "L3",
+        "L4"
+      ]
+    },
+    {
+      "group": "Όψεις-σκαλωσιά",
+      "name": "Σκαλωσιά όψης Ναούσης/Ιωαν.",
+      "subcontractor": "Οικοδομικό",
+      "start": "2026-09-25",
+      "end": "2026-09-29",
+      "duration": 2,
+      "critical": false,
+      "zones": [
+        "FACADE"
+      ]
+    },
+    {
+      "group": "Όψεις-σκαλωσιά",
+      "name": "Εξωτ. σοβάς όψης Ναούσης",
+      "subcontractor": "Σοβατζής",
+      "start": "2026-09-30",
+      "end": "2026-10-14",
+      "duration": 10,
+      "critical": false,
+      "zones": [
+        "FACADE"
+      ]
+    },
+    {
+      "group": "Όψεις-σκαλωσιά",
+      "name": "Κεραμοσκεπή Ναούσης",
+      "subcontractor": "Στεγαστής",
+      "start": "2026-10-15",
+      "end": "2026-10-22",
+      "duration": 5,
+      "critical": false,
+      "zones": [
+        "FACADE",
+        "ROOF"
+      ]
+    },
+    {
+      "group": "Όψεις-σκαλωσιά",
+      "name": "Βαφή όψης Ναούσης (τελ.)",
+      "subcontractor": "Μπογιατζής",
+      "start": "2027-01-15",
+      "end": "2027-01-22",
+      "duration": 5,
+      "critical": false,
+      "zones": [
+        "FACADE"
+      ]
+    },
+    {
+      "group": "Όψεις-σκαλωσιά",
+      "name": "Σκαλωσιά ακαλύπτου",
+      "subcontractor": "Οικοδομικό",
+      "start": "2027-01-25",
+      "end": "2027-01-27",
+      "duration": 2,
+      "critical": false,
+      "zones": [
+        "EXTERIOR-BACK"
+      ]
+    },
+    {
+      "group": "Όψεις-σκαλωσιά",
+      "name": "Εξωτ. σοβάς ακαλύπτου",
+      "subcontractor": "Σοβατζής",
+      "start": "2027-01-28",
+      "end": "2027-02-09",
+      "duration": 8,
+      "critical": false,
+      "zones": [
+        "EXTERIOR-BACK"
+      ]
+    },
+    {
+      "group": "Όψεις-σκαλωσιά",
+      "name": "Βαφή ακαλύπτου (τελ.)",
+      "subcontractor": "Μπογιατζής",
+      "start": "2027-02-10",
+      "end": "2027-02-16",
+      "duration": 4,
+      "critical": false,
+      "zones": [
+        "EXTERIOR-BACK"
+      ]
+    },
+    {
+      "group": "Δάπεδα-υπόβ.",
+      "name": "Τσιμεντοκονίες - πρέσα",
+      "subcontractor": "Συν. τσιμεντοκον.",
+      "start": "2026-10-01",
+      "end": "2026-10-07",
+      "duration": 4,
+      "critical": true,
+      "zones": [
+        "B0",
+        "L1",
+        "L2",
+        "L3",
+        "L4"
+      ]
+    },
+    {
+      "group": "Δάπεδα-υπόβ.",
+      "name": "Ωρίμανση πλακάκι",
+      "subcontractor": "Συν. τσιμεντοκον.",
+      "start": "2026-10-08",
+      "end": "2026-10-15",
+      "duration": 5,
+      "critical": true,
+      "zones": [
+        "B0",
+        "L1",
+        "L2",
+        "L3",
+        "L4"
+      ]
+    },
+    {
+      "group": "Μάρμαρα",
+      "name": "Μαρμαροποδιές/κατώφλια",
+      "subcontractor": "Μαρμαράς",
+      "start": "2026-10-01",
+      "end": "2026-10-09",
+      "duration": 6,
+      "critical": false,
+      "zones": [
+        "B0",
+        "L1",
+        "L2",
+        "L3",
+        "L4"
+      ]
+    },
+    {
+      "group": "Στεγανώσεις",
+      "name": "Στεγανώσεις λουτρών + δοκιμές",
+      "subcontractor": "Πλακάς+μον.",
+      "start": "2026-10-01",
+      "end": "2026-10-08",
+      "duration": 5,
+      "critical": false,
+      "zones": [
+        "B0",
+        "L1",
+        "L2",
+        "L3",
+        "L4"
+      ]
+    },
+    {
+      "group": "Δάπεδα",
+      "name": "Προγυαλισμένο σε πέτσωμα",
+      "subcontractor": "Αντρέας-δάπεδα",
+      "start": "2026-10-06",
+      "end": "2026-10-16",
+      "duration": 8,
+      "critical": false,
+      "zones": [
+        "B0",
+        "L1",
+        "L2",
+        "L3",
+        "L4"
+      ]
+    },
+    {
+      "group": "Ανελκυστήρας",
+      "name": "Εγκατάσταση ανελκυστήρα",
+      "subcontractor": "Συν. ασανσέρ",
+      "start": "2026-10-08",
+      "end": "2026-10-22",
+      "duration": 10,
+      "critical": false,
+      "zones": [
+        "LIFT"
+      ]
+    },
+    {
+      "group": "Πλακάκια-μπάνια",
+      "name": "Πλακάκι μπάνια Α",
+      "subcontractor": "Πλακάς",
+      "start": "2026-10-16",
+      "end": "2026-10-22",
+      "duration": 4,
+      "critical": true,
+      "zones": [
+        "L2"
+      ]
+    },
+    {
+      "group": "Πλακάκια-μπάνια",
+      "name": "Πλακάκι μπάνια Β",
+      "subcontractor": "Πλακάς",
+      "start": "2026-10-23",
+      "end": "2026-10-30",
+      "duration": 4,
+      "critical": true,
+      "zones": [
+        "L3"
+      ]
+    },
+    {
+      "group": "Πλακάκια-μπάνια",
+      "name": "Πλακάκι μπάνιο Γ",
+      "subcontractor": "Πλακάς",
+      "start": "2026-11-02",
+      "end": "2026-11-05",
+      "duration": 3,
+      "critical": true,
+      "zones": [
+        "L4"
+      ]
+    },
+    {
+      "group": "Πλακάκια-μπάνια",
+      "name": "Πλακάκι μπάνια Ισόγειο",
+      "subcontractor": "Πλακάς",
+      "start": "2026-11-06",
+      "end": "2026-11-11",
+      "duration": 3,
+      "critical": true,
+      "zones": [
+        "L1"
+      ]
+    },
+    {
+      "group": "Πλακάκια-εξώστες",
+      "name": "Πλακάκι εξώστες Α",
+      "subcontractor": "Πλακάς",
+      "start": "2026-11-12",
+      "end": "2026-11-17",
+      "duration": 3,
+      "critical": true,
+      "zones": [
+        "BALCONIES",
+        "L2"
+      ]
+    },
+    {
+      "group": "Πλακάκια-εξώστες",
+      "name": "Πλακάκι εξώστες Β",
+      "subcontractor": "Πλακάς",
+      "start": "2026-11-18",
+      "end": "2026-11-23",
+      "duration": 3,
+      "critical": true,
+      "zones": [
+        "BALCONIES",
+        "L3"
+      ]
+    },
+    {
+      "group": "Πλακάκια-εξώστες",
+      "name": "Πλακάκι εξώστης+ταράτσα Γ",
+      "subcontractor": "Πλακάς",
+      "start": "2026-11-24",
+      "end": "2026-11-27",
+      "duration": 3,
+      "critical": true,
+      "zones": [
+        "BALCONIES",
+        "L4",
+        "ROOF"
+      ]
+    },
+    {
+      "group": "Πλακάκια-δάπεδα",
+      "name": "Πλακάκι δάπεδο Α",
+      "subcontractor": "Πλακάς",
+      "start": "2026-11-30",
+      "end": "2026-12-04",
+      "duration": 4,
+      "critical": true,
+      "zones": [
+        "L2"
+      ]
+    },
+    {
+      "group": "Πλακάκια-δάπεδα",
+      "name": "Πλακάκι δάπεδο Β",
+      "subcontractor": "Πλακάς",
+      "start": "2026-12-07",
+      "end": "2026-12-11",
+      "duration": 4,
+      "critical": false,
+      "zones": [
+        "L3"
+      ]
+    },
+    {
+      "group": "Πλακάκια-δάπεδα",
+      "name": "Πλακάκι δάπεδο Ισόγειο",
+      "subcontractor": "Πλακάς",
+      "start": "2026-12-14",
+      "end": "2026-12-17",
+      "duration": 3,
+      "critical": false,
+      "zones": [
+        "L1"
+      ]
+    },
+    {
+      "group": "Πλακάκια-δάπεδα",
+      "name": "Πλακάκι δάπεδο Υπόγειο",
+      "subcontractor": "Πλακάς",
+      "start": "2026-12-18",
+      "end": "2026-12-23",
+      "duration": 3,
+      "critical": false,
+      "zones": [
+        "B0"
+      ]
+    },
+    {
+      "group": "Πλακάκια-δάπεδα",
+      "name": "Πλακάκι κλιμακοστάσιο + σκάλες",
+      "subcontractor": "Πλακάς",
+      "start": "2026-12-24",
+      "end": "2027-01-08",
+      "duration": 8,
+      "critical": false,
+      "zones": [
+        "STAIR"
+      ]
+    },
+    {
+      "group": "Χρωμ. τελικά",
+      "name": "Τελικά χέρια βαφής - Α",
+      "subcontractor": "Μπογιατζής",
+      "start": "2026-12-07",
+      "end": "2026-12-10",
+      "duration": 3,
+      "critical": true,
+      "zones": [
+        "L2"
+      ]
+    },
+    {
+      "group": "Χρωμ. τελικά",
+      "name": "Τελικά χέρια βαφής - Β",
+      "subcontractor": "Μπογιατζής",
+      "start": "2026-12-14",
+      "end": "2026-12-17",
+      "duration": 3,
+      "critical": false,
+      "zones": [
+        "L3"
+      ]
+    },
+    {
+      "group": "Χρωμ. τελικά",
+      "name": "Τελικά χέρια βαφής - Γ",
+      "subcontractor": "Μπογιατζής",
+      "start": "2026-12-18",
+      "end": "2026-12-23",
+      "duration": 3,
+      "critical": false,
+      "zones": [
+        "L4"
+      ]
+    },
+    {
+      "group": "Χρωμ. τελικά",
+      "name": "Τελικά χέρια βαφής - Ισόγειο",
+      "subcontractor": "Μπογιατζής",
+      "start": "2026-12-24",
+      "end": "2026-12-30",
+      "duration": 3,
+      "critical": false,
+      "zones": [
+        "L1"
+      ]
+    },
+    {
+      "group": "Χρωμ. τελικά",
+      "name": "Τελικά χέρια βαφής - Υπόγ./κλιμ.",
+      "subcontractor": "Μπογιατζής",
+      "start": "2027-01-11",
+      "end": "2027-01-14",
+      "duration": 3,
+      "critical": false,
+      "zones": [
+        "B0",
+        "STAIR"
+      ]
+    },
+    {
+      "group": "Ξυλουργικά",
+      "name": "Κουζίνες+ντουλάπες Α",
+      "subcontractor": "Ξυλουργός",
+      "start": "2026-12-11",
+      "end": "2026-12-21",
+      "duration": 6,
+      "critical": true,
+      "zones": [
+        "B0",
+        "L1",
+        "L2",
+        "L3",
+        "L4"
+      ]
+    },
+    {
+      "group": "Ξυλουργικά",
+      "name": "Κουζίνες+ντουλάπες Β",
+      "subcontractor": "Ξυλουργός",
+      "start": "2026-12-22",
+      "end": "2026-12-31",
+      "duration": 6,
+      "critical": true,
+      "zones": [
+        "B0",
+        "L1",
+        "L2",
+        "L3",
+        "L4"
+      ]
+    },
+    {
+      "group": "Ξυλουργικά",
+      "name": "Κουζίνες+ντουλάπες Γ",
+      "subcontractor": "Ξυλουργός",
+      "start": "2027-01-04",
+      "end": "2027-01-13",
+      "duration": 6,
+      "critical": true,
+      "zones": [
+        "B0",
+        "L1",
+        "L2",
+        "L3",
+        "L4"
+      ]
+    },
+    {
+      "group": "Ξυλουργικά",
+      "name": "Κουζίνες+ντουλάπες Ισόγειο",
+      "subcontractor": "Ξυλουργός",
+      "start": "2027-01-14",
+      "end": "2027-01-21",
+      "duration": 5,
+      "critical": true,
+      "zones": [
+        "L1"
+      ]
+    },
+    {
+      "group": "Κουφώματα-ξυλ.",
+      "name": "Εσωτ. πόρτες + ασφαλείας",
+      "subcontractor": "Προμηθευτές",
+      "start": "2027-01-15",
+      "end": "2027-01-25",
+      "duration": 6,
+      "critical": false,
+      "zones": [
+        "B0",
+        "L1",
+        "L2",
+        "L3",
+        "L4"
+      ]
+    },
+    {
+      "group": "Τελειώματα",
+      "name": "Είδη υγιεινής/μπαταρίες",
+      "subcontractor": "Υδραυλικός",
+      "start": "2027-01-15",
+      "end": "2027-01-22",
+      "duration": 5,
+      "critical": false,
+      "zones": [
+        "B0",
+        "L1",
+        "L2",
+        "L3",
+        "L4"
+      ]
+    },
+    {
+      "group": "Τελειώματα",
+      "name": "Αντλίες/fan coils/ηλιακοί",
+      "subcontractor": "Ψυκτικός+υδρ.",
+      "start": "2027-01-22",
+      "end": "2027-02-01",
+      "duration": 6,
+      "critical": false,
+      "zones": [
+        "B0",
+        "L1",
+        "L2",
+        "L3",
+        "L4"
+      ]
+    },
+    {
+      "group": "Τελειώματα",
+      "name": "Γ φάση ηλεκτρ.: φώτα/διακόπτες",
+      "subcontractor": "Ηλεκτρολόγος",
+      "start": "2027-01-22",
+      "end": "2027-02-01",
+      "duration": 6,
+      "critical": true,
+      "zones": [
+        "B0",
+        "L1",
+        "L2",
+        "L3",
+        "L4"
+      ]
+    },
+    {
+      "group": "Τελειώματα",
+      "name": "Συναγερμός+κουδούνια/θυροτηλ.",
+      "subcontractor": "Ειδικός+ηλ.",
+      "start": "2027-02-02",
+      "end": "2027-02-08",
+      "duration": 4,
+      "critical": true,
+      "zones": [
+        "B0",
+        "L1",
+        "L2",
+        "L3",
+        "L4"
+      ]
+    },
+    {
+      "group": "Τελειώματα",
+      "name": "Αξεσουάρ/διαχωρ.ντους/καθρέφτες",
+      "subcontractor": "Διάφορα",
+      "start": "2027-02-02",
+      "end": "2027-02-08",
+      "duration": 4,
+      "critical": false,
+      "zones": [
+        "B0",
+        "L1",
+        "L2",
+        "L3",
+        "L4"
+      ]
+    },
+    {
+      "group": "Έλεγχοι",
+      "name": "Λειτουργικές δοκιμές Η/Μ",
+      "subcontractor": "Η/Μ",
+      "start": "2027-02-09",
+      "end": "2027-02-16",
+      "duration": 5,
+      "critical": true,
+      "zones": [
+        "B0",
+        "L1",
+        "L2",
+        "L3",
+        "L4"
+      ]
+    }
+  ],
+  "tasks": [
+    {
+      "group": "Αποχέτευση",
+      "task": "Αίτηση αποχέτευσης",
+      "responsible": "Ιδιοκτήτης",
+      "start": "2026-06-22",
+      "end": "2026-06-23",
+      "critical": false
+    },
+    {
+      "group": "Αποχέτευση",
+      "task": "Διαδικασία Δήμου + τέλη",
+      "responsible": "Δήμος",
+      "start": "2026-06-24",
+      "end": "2026-07-24",
+      "critical": false
+    },
+    {
+      "group": "Buffer",
+      "task": "Buffer πριν παράδοση",
+      "responsible": "—",
+      "start": "2027-02-17",
+      "end": "2027-03-03",
+      "critical": true
+    },
+    {
+      "group": "Παράδοση",
+      "task": "Snag list + καθαρισμοί",
+      "responsible": "Διάφορα",
+      "start": "2027-03-04",
+      "end": "2027-03-16",
+      "critical": true
+    },
+    {
+      "group": "Παράδοση",
+      "task": "Παράδοση",
+      "responsible": "PM",
+      "start": "2027-03-17",
+      "end": "2027-03-19",
+      "critical": true
+    }
+  ]
+}
